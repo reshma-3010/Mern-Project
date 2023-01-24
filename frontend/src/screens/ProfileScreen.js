@@ -29,7 +29,7 @@ export default function ProfileScreen() {
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
 
-  let [{ loadingUpdate }, dispatch] = useReducer(reducer, {
+  let [, dispatch] = useReducer(reducer, {
     loadingUpdate: false,
   });
 
