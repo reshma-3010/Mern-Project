@@ -19,7 +19,6 @@ import PaymentMethodScreen from "./screens/PaymentMethodScreen";
 import PlaceOrderScreen from "./screens/PlaceOrderScreen";
 import OrderScreen from "./screens/OrderScreen";
 import OrderHistoryScreen from "./screens/OrderHistoryScreen";
-<<<<<<< HEAD
 import ProfileScreen from './screens/ProfileScreen';
 import Button from 'react-bootstrap/Button';
 import { getError } from './utils';
@@ -34,8 +33,7 @@ import UserListScreen from "./screens/UserListScreen";
 import UserEditScreen from "./screens/UserEditScreen";
 import SearchScreen from "./screens/SearchScreen";
 import ProductEditScreen from "./screens/ProductEditScreen";
-=======
->>>>>>> d5fc5f0a22974c348cf7ae31554090752b5b7e1f
+
 
 function App() {
   const { state, dispatch: ctxDispatch } = useContext(Store);
@@ -176,15 +174,13 @@ function App() {
               <Route path='/search' element={<SearchScreen />} />
               <Route path='/signin' element={<SigninScreen />} />
               <Route path='/signup' element={<SignupScreen />} />
-<<<<<<< HEAD
+
               <Route path='/profile' element={
                 <ProtectedRoute>
                   <ProfileScreen/>
                 </ProtectedRoute>
               }/>
-=======
-              
->>>>>>> d5fc5f0a22974c348cf7ae31554090752b5b7e1f
+
               <Route path='/placeorder' element={<PlaceOrderScreen />} />
               <Route path='/order/:id' element={<ProtectedRoute>
                 <OrderScreen/>
